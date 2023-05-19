@@ -22,12 +22,14 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 ### Header 3
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```php
+/**
+ * @XML\Document(
+ *     "rootTag"="XML",
+ *     "version"="1.0",
+ *     "encoding"="UTF-8"
+ * )
+ */
 ```
 
 ```ruby
