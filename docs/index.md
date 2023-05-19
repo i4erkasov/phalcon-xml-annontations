@@ -23,6 +23,8 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 ### Header 3
 
 ```php
+<php
+
 /**
  * @XML\Document(
  *     "rootTag"="XML",
@@ -30,6 +32,10 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
  *     "encoding"="UTF-8"
  * )
  */
+ class Annotation 
+ {
+    // ...
+ }
 ```
 
 ```ruby
