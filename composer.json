@@ -2,11 +2,13 @@
     "name": "i4erkasov/phalcon-xml-annotations",
     "description": "Phalcon XML Annotations",
     "type": "library",
+    "keywords": ["phalcon","xml","annotations","phalcon xml","phalcon xml annotation","object to xml","phalcon object to xml"],
     "license": "MIT",
     "authors": [
         {
             "name": "ivan cherkasov",
-            "email": "i.4erkasov@gmail.com"
+            "email": "i.4erkasov@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
