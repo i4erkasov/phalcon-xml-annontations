@@ -37,7 +37,7 @@ class MyXmlObject
     public string $name;
 
     /**
-     * @XML\Tag("name"="age")
+     * @XML\Attribute("name"="age")
      */
     public int $age;
 }
