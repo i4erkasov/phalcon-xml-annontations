@@ -27,16 +27,17 @@ composer require i4erkasov/phalcon-xml-annotations
  *     "version"="1.0",
  *     "encoding"="UTF-8",
  * )
+ * @XML\Tag("name"="Person")
  */
 class MyXmlObject
 {
     /**
-     * @XML\Tag("name")
+     * @XML\Attribute("name"="last_name")
      */
     public string $name;
 
     /**
-     * @XML\Tag("age")
+     * @XML\Tag("name"="age")
      */
     public int $age;
 }
