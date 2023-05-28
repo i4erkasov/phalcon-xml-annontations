@@ -171,7 +171,7 @@ class Analyzer implements AnalyzerInterface
             case Tag::ANNOTATION:
                 /** @var Tag $tag */
                 $tag = $this->getAnnotationInstance(
-                    $annotation, (!is_iterable($value) || !($value instanceof \Iterator)) ? (string)$value : null
+                    $annotation, (!is_iterable($value) && !($value instanceof \Iterator)) ? (string)$value : null
                 );
 
                 if (is_iterable($value) || $value instanceof \Iterator) {
@@ -192,7 +192,7 @@ class Analyzer implements AnalyzerInterface
 
                 if (is_null($attribute->getValue())) {
                     $attribute->setValue(
-                        (!is_iterable($value) || !($value instanceof \Iterator)) ? (string)$value : null
+                        (!is_iterable($value) && !($value instanceof \Iterator)) ? (string)$value : null
                     );
                 }
 
