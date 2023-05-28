@@ -1,0 +1,23 @@
+{
+    "name": "i4erkasov/phalcon-xml-annotations",
+    "description": "Phalcon XML Annotation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ivan cherkasov",
+            "email": "i.4erkasov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-psr": "^1",
+        "ext-xmlwriter": "*",
+        "ext-phalcon": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "I4\\Phalcon\\XML\\": "src"
+        }
+    }
+}
