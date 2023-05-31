@@ -17,9 +17,13 @@
         "ext-xmlwriter": "*",
         "ext-phalcon": "^4.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
     "autoload": {
         "psr-4": {
-            "I4\\Phalcon\\XML\\": "src"
+            "I4\\Phalcon\\XML\\": "src",
+            "TestPhalconXML\\": "tests"
         }
     }
 }
