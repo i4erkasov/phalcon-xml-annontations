@@ -3,6 +3,7 @@
     "description": "Phalcon XML Annotations",
     "type": "library",
     "keywords": ["phalcon","xml","annotations","phalcon xml","phalcon xml annotation","object to xml","phalcon object to xml"],
+    "descriptions": "Phalcon XML Annotations is a library that allows you to convert PHP objects into XML files. It provides annotations to define the structure and parameters of XML files based on PHP objects.",
     "license": "MIT",
     "authors": [
         {
