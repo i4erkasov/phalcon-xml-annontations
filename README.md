@@ -60,9 +60,9 @@ echo $xml->save('/tmp/file.xml'); // Saves the generated XML to a file
   <IrishPub Name="The Shamrock Pub" Address="Dublin, Irelan" OpeningTime="10:00 AM" ClosingTime="2:00 AM">
       <![CDATA[Irish Pub]]>
     <BeerList>
-      <Beer Brand="Guinness" Type="Stout" ABV="4.2" Country="Ireland"/>
-      <Beer Brand="Smithwick's" Type="Red Ale" ABV="4.5" Country="Ireland"/>
-      <Beer Brand="Harp Lager" Type="Lager" ABV="4.5" Country="Ireland"/>
+      <Beer Date="2023-06-02" Brand="Guinness" Type="Stout" ABV="4.2" Country="Ireland"/>
+      <Beer Date="2023-06-02" Brand="Smithwick's" Type="Red Ale" ABV="4.5" Country="Ireland"/>
+      <Beer Date="2023-06-02" Brand="Harp Lager" Type="Lager" ABV="4.5" Country="Ireland"/>
     </BeerList>
   </IrishPub>
 </XML>
