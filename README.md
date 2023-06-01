@@ -55,7 +55,8 @@ echo $xml->save('/tmp/file.xml'); // Saves the generated XML to a file
 ```
 #### Result:
 ```xml
-<xml>
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
   <IrishPub Name="The Shamrock Pub" Address="Dublin, Irelan" OpeningTime="10:00 AM" ClosingTime="2:00 AM">
       <![CDATA[Irish Pub]]>
     <BeerList>
@@ -64,7 +65,7 @@ echo $xml->save('/tmp/file.xml'); // Saves the generated XML to a file
       <Beer Brand="Harp Lager" Type="Lager" ABV="4.5" Country="Ireland"/>
     </BeerList>
   </IrishPub>
-</xml>
+</XML>
 ```
 
 ## Contributions
