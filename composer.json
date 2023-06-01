@@ -23,7 +23,8 @@
     "autoload": {
         "psr-4": {
             "I4\\Phalcon\\XML\\": "src",
-            "TestPhalconXML\\": "tests"
+            "TestPhalconXML\\": "tests",
+            "ExamplePhalconXML\\": "example"
         }
     }
 }

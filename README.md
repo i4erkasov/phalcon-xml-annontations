@@ -21,26 +21,35 @@ composer require i4erkasov/phalcon-xml-annotations
 ## Usage Example
 
 ```php
-/**
- * @XML\Document(
- *     "rootTag"="XML",
- *     "version"="1.0",
- *     "encoding"="UTF-8",
- * )
- * @XML\Tag("name"="Person")
- */
-class MyXmlObject
-{
-    /**
-     * @XML\Attribute("name"="last_name")
-     */
-    public string $name;
+<?php
 
-    /**
-     * @XML\Attribute("name"="age")
-     */
-    public int $age;
-}
+use ExamplePhalconXML\IrishPub;
+use I4\Phalcon\XML\Analyzer;
+use I4\Phalcon\XML\XmlAnnotations;
+use Phalcon\Annotations\Adapter\Memory;
+
+$annotations = new XmlAnnotations(
+    new Analyzer(new Memory())
+);
+
+$xml = $annotations->parse(
+    new IrishPub(
+        'The Shamrock Pub',
+        'Dublin, Ireland',
+        '10:00 AM',
+        '2:00 AM'
+    )
+);
+
+$xml->setExtraAttributes([
+    'Beer' => [
+        'Date' => (new DateTime('now'))->format('Y-m-d'),
+    ]
+]);
+
+echo $xml->getString(); // Returns the XML as a string
+
+echo $xml->save('/tmp/file.xml'); // Saves the generated XML to a file
 ```
 
 ## Contributions
