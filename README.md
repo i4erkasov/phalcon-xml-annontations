@@ -2,6 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/i4erkasov/phalcon-xml-annotations/v)](https://packagist.org/packages/i4erkasov/phalcon-xml-annotations)
 [![Total Downloads](https://poser.pugx.org/i4erkasov/phalcon-xml-annotations/downloads)](https://packagist.org/packages/i4erkasov/phalcon-xml-annotations)
+![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/i4erkasov/phalcon-xml-annotations/php)
 [![License](https://poser.pugx.org/i4erkasov/phalcon-xml-annotations/license)](https://packagist.org/packages/i4erkasov/phalcon-xml-annotations)
 
 Phalcon XML Annotations is a library that allows you to convert PHP objects into XML files. It provides annotations to define the structure and parameters of XML files based on PHP objects.
