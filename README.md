@@ -20,6 +20,8 @@ composer require i4erkasov/phalcon-xml-annotations
 
 ## Usage Example
 
+See the `example` directory for context.
+#### Code:
 ```php
 <?php
 
@@ -50,6 +52,19 @@ $xml->setExtraAttributes([
 echo $xml->getString(); // Returns the XML as a string
 
 echo $xml->save('/tmp/file.xml'); // Saves the generated XML to a file
+```
+#### Result:
+```xml
+<xml>
+  <IrishPub Name="The Shamrock Pub" Address="Dublin, Irelan" OpeningTime="10:00 AM" ClosingTime="2:00 AM">
+      <![CDATA[Irish Pub]]>
+    <BeerList>
+      <Beer Brand="Guinness" Type="Stout" ABV="4.2" Country="Ireland"/>
+      <Beer Brand="Smithwick's" Type="Red Ale" ABV="4.5" Country="Ireland"/>
+      <Beer Brand="Harp Lager" Type="Lager" ABV="4.5" Country="Ireland"/>
+    </BeerList>
+  </IrishPub>
+</xml>
 ```
 
 ## Contributions

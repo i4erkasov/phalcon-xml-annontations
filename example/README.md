@@ -1,7 +1,7 @@
 ## Usage Example
 
 Here's an example of how to use the library with the `IrishPub` class:
-
+#### Code:
 ```php
 <?php
 
@@ -33,6 +33,20 @@ echo $xml->getString(); // Returns the XML as a string
 
 echo $xml->save('/tmp/file.xml'); // Saves the generated XML to a file
 ```
+#### Result:
+```xml
+<xml>
+  <IrishPub Name="The Shamrock Pub" Address="Dublin, Irelan" OpeningTime="10:00 AM" ClosingTime="2:00 AM">
+      <![CDATA[Irish Pub]]>
+    <BeerList>
+      <Beer Brand="Guinness" Type="Stout" ABV="4.2" Country="Ireland"/>
+      <Beer Brand="Smithwick's" Type="Red Ale" ABV="4.5" Country="Ireland"/>
+      <Beer Brand="Harp Lager" Type="Lager" ABV="4.5" Country="Ireland"/>
+    </BeerList>
+  </IrishPub>
+</xml>
+```
+
 
 ### Dependency: Analyzer and Adapter
 The `Analyzer` class has a dependency on the `Adapter` class, which is an implementation of the `AdapterInterface` defined in the Phalcon library. The `AdapterInterface` serves as the base interface for different adapters used in Phalcon Annotations. In the example, the `Memory` adapter is used, which stores annotations in memory.
